@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Box</title>
+  <link rel="stylesheet" href="chat_style.css">
+  <script type="module" src="index_student.js"></script>
+
+</head>
+
+
+<body>
+
+
+  <div class="dashboard">
+    <div class="header">
+      <button class="dashboard-btn" onclick="window.location.href='homes.php';">Dashboard</button>
+      <h3>Chat with employers.</h3>
+      <span class="campushired">CAMPUSHIRED</span>
+    </div>
+
+
+    <div class="content">
+
+
+      <div id="contact-list" class="contactlist">
+        <h2>Contact List</h2>
+    </div>
+
+      
+
+      
+      <!-- 聊天界面 -->
+    <div id="chat-room" class="chat-section">
+        <h2>Chat</h2>
+        <div id="messages" class="chat-messages"></div>
+        <div id="message-input" class="chat-input">
+            <input type="text" id="message" placeholder="输入消息..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+      <div class="sidebar">
+        <img class="logo" src="system_picture/work.jpg" alt="99 Speedmart Logo" id = "picture">
+        <div class="info">
+          <span class="icon">📍</span>
+          <p id = "location">Work Location</p>
+        </div>
+        <div class="info">
+          <span class="icon">📞</span>
+          <p id = "phone">Employer phone number</p>
+        </div>
+        <div class="info">
+          <span class="icon">✉️</span>
+          <p id = "email">Employer email</p>
+        </div>
+        
+      </div>
+
+
+    </div>
+  </div>
+</body>
+</html>
+

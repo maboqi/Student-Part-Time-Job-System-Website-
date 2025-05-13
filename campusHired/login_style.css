@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Centering and background for the login section */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 182, 50, 0.8),rgba(255, 105, 180, 0.8)), url(system_picture/work.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.alert {
+    max-width: 100%;  /* 限制最大宽度 */
+    width: auto;      /* 让宽度根据内容自适应 */
+    word-wrap: break-word;  /* 如果文字太长，自动换行 */
+}
+
+
+
+.form-box {
+    width: 30%;
+    max-width: 400px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideDown 0.8s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputbox {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.inputbox input {
+    width: calc(100% - 0px);
+    height: 45px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 1em;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #888;
+    font-size: 1.2em;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f8d1e4;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    transition: background-color 0.3s;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    background-color: #ff9eb8;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: -15px;
+    margin-bottom: 25px;
+
+}
+
+.forgot-password a {
+    color: #b20303;
+    font-size: 0.7em;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.admin {
+    text-align: right;
+    margin-top: -15px;
+    margin-bottom: 25px;
+
+}
+
+.admin a {
+    color: blue;
+    font-size: 0.7em;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.admin a:hover {
+    text-decoration: underline;
+}
+
+.hiring {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8em;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .form-box {
+        width: 90%;
+    }
+}
